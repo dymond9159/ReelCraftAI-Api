@@ -1,7 +1,7 @@
 {
-  "name": "nodejs",
+  "name": "AI SaaS Project",
   "version": "1.0.0",
-  "description": "",
+  "description": "API for AI SaaS Project",
   "main": "index.js",
   "scripts": {
     "build": "nest build",
@@ -19,7 +19,7 @@
     "prisma:studio": "prisma studio"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dong Ying",
   "license": "ISC",
   "prettier": {
     "semi": true,
