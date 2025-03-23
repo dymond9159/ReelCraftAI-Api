@@ -14,9 +14,18 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
+    "prisma:seed": "prisma db seed",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate deploy",
-    "prisma:studio": "prisma studio"
+    "prisma:studio": "prisma studio",
+    "prisma:reset": "prisma db push --force-reset && prisma db seed",
+    "prisma:migrate-auto": "sh ./scripts/migrate-auto.sh",
+    "prisma:validate": "prisma validate",
+    "prisma:format": "prisma format",
+    "prisma:entity:generate": "typeorm-model-generator"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   },
   "keywords": [],
   "author": "Dong Ying",
@@ -24,7 +33,7 @@
   "prettier": {
     "semi": true,
     "trailingComma": "all",
-    "singleQuote": true,
+    "singleQuote": false,
     "printWidth": 80,
     "tabWidth": 2,
     "arrowParens": "avoid",
