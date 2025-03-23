@@ -11,8 +11,8 @@ async function bootstrap() {
   app.enableCors();
 
   const config = new DocumentBuilder()
-    .setTitle('SaaS API')
-    .setDescription('The SaaS API description')
+    .setTitle('Reel Craft AI API Documentation')
+    .setDescription('Powering Intelligent Video Creation & Automation')
     .setVersion('1.0')
     .addBearerAuth()
     .build();
