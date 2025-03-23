@@ -30,7 +30,7 @@ args = "npx prisma generate"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "npx prisma migrate dev"
+args = "npx prisma db push"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
